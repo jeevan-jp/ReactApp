@@ -7,6 +7,7 @@
 * LifeCycle
 * Asynchronous Calls (Made to the server mainly) - Used github/fetch library.
 * Containers
+* Conditional Rendering
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
