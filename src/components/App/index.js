@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Intro from '../Intro';
-import Series from '../../containers/series';
+import Main from '../../components/Main';
 import './App.css';
 import 'whatwg-fetch';
 
@@ -12,8 +11,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Intro message="You can find all your most loved series..." />
-        <Series />
+        <Main />
       </div>
     );
   }
