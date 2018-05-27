@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Intro from '../Intro';
 import './App.css';
+import 'whatwg-fetch';
 
 class App extends Component {
 
@@ -11,9 +12,9 @@ class App extends Component {
   componentDidMount() {
     const series = ["Vikings", "Game of thrones"];
 
-    setTimeout(()=> {
-      this.setState({series}); // eq+ to this.setState({series: series});
-    }, 2000);
+    fetch('https://api.tvmaze.com/search/shows?q=Vikings')
+      .then(res => res.json())
+      .then(json => this.setState({ series: json}));
   }
 
   render() {
@@ -22,7 +23,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Intro message="You can find all your most loved series..."/>
+        <Intro message="You can find all your most loved series..." />
         Length of series array: { this.state.series.length }
       </div>
     );

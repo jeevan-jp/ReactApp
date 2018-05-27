@@ -1,10 +1,11 @@
 ## React demo project
 
 ### Topics Covered
-  React componet
-  Props
-  State
-  LifeCycle
+* React component
+* Props
+* State
+* LifeCycle
+* Asynchronous Calls (Made to the server mainly) - Used github/fetch library.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
